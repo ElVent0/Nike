@@ -44,6 +44,10 @@ a {
   text-decoration: none;
 }
 
+input {
+  outline: none;
+}
+
 /* header */
 
 .header {
