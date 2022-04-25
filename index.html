@@ -16,6 +16,48 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__icons">
+        <ul class="header__list">
+          <li>
+            <form action="" class="header__search_form">
+              <input
+                type="text"
+                class="header__input_search"
+                placeholder="Search"
+              />
+              <button type="button" class="header__button">
+                <svg class="header__svg" width="15px" height="15px">
+                  <use
+                    href="./images/symbol-defs.svg#icon-search"
+                    class="header__use"
+                  ></use>
+                </svg>
+              </button>
+            </form>
+          </li>
+
+          <li class="header__item">
+            <button type="button" class="header__button_right">
+              <svg class="header__svg" width="15px" height="15px">
+                <use
+                  href="./images/symbol-defs.svg#icon-heart"
+                  class="header__use"
+                ></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__item">
+            <button type="button" class="header__button_right">
+              <svg class="header__svg" width="15px" height="15px">
+                <use
+                  href="./images/symbol-defs.svg#icon-cart"
+                  class="header__use"
+                ></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
       <div class="container header__background">
         <ul class="header__list_navigation">
           <li class="header__item_navigation">
@@ -46,6 +88,7 @@
     </header>
     <main>
       <section class="hero"></section>
+      <section class="hero2"></section>
     </main>
   </body>
 </html>

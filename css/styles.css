@@ -53,11 +53,89 @@ a {
   max-height: 900px;
 }
 
+.header__icons {
+  position: absolute;
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+  top: 60px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.header__svg {
+  max-height: 20px;
+  fill: var(--color-navigation);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__use {
+}
+.header__list {
+  display: flex;
+  align-items: center;
+}
+.header__item {
+  color: var(--color-navigation);
+  border: 1px var(--color-social) solid;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__input_search {
+  border: none;
+  background-color: transparent;
+}
+
+.header__button {
+  border: 1px var(--color-social) solid;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  margin-left: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__button_right {
+  border: 1px var(--color-social) solid;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__button_right:hover .header__svg {
+  fill: var(--color-navigation-hover);
+}
+
+.header__button:hover .header__svg {
+  fill: var(--color-navigation-hover);
+}
+
+.header__search_form {
+  display: flex;
+  align-items: center;
+  border: 1px var(--color-social) solid;
+  border-radius: 50px;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
 .header__background {
-  background-image: url(../images/background-1.jpg);
+  background-image: url(../images/background-1.png),
+    url(../images/background-1-0.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  background-attachment: scroll, fixed;
   width: 100%;
   height: 580px;
 }
@@ -68,7 +146,7 @@ a {
   line-height: 23px;
   color: var(--color-navigation);
   display: flex;
-  margin-top: 520px;
+  margin-top: 480px;
 }
 .header__item_navigation {
   margin-right: 25px;
@@ -84,7 +162,7 @@ a {
   display: flex;
   position: relative;
   left: 650px;
-  top: 150px;
+  top: 200px;
 }
 .header__item_social {
   margin-right: 20px;
@@ -110,6 +188,21 @@ a {
 /* section 2 */
 
 .hero {
-  background-color: var(--color-navigation);
-  height: 200px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  max-height: 900px;
+  background-image: url(../images/background-0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* section 3 */
+
+.hero2 {
+  height: 100vh;
+  max-height: 900px;
+  background: var(--color-background);
 }
